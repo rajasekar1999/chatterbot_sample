@@ -1,9 +1,9 @@
 import chatterbot
-from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ListTrainer as lt
 import os
 
 bot = ChatBot('Bot')
-bot.set_Trainer(ListTrainer)
+bot.set_Trainer(lt)
 
 for files in os.listdir('C:/Users/RAJASEKAR/Downloads/New Project/chatterbot-corpus-master/chatterbot_corpus/data/english'):
 	data = open('C:/Users/RAJASEKAR/Downloads/New Project/chatterbot-corpus-master/chatterbot_corpus/data/english'+ files, 'r').readlines()
